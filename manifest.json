@@ -1,0 +1,10 @@
+{
+    "name": "PluginTemplate",
+    "version_number": "1.0.0",
+    "website_url": "",
+    "description": "",
+    "dependencies": [
+        "bbepisTaleSpire-BepInExPack-5.4.10",
+	"brcoding-SetInjectionFlagPlugin-2.3.0"
+    ]
+}

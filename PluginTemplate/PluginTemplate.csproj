@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>PluginTemplate</AssemblyName>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>0.0.0</Version>
+    <PackageId>TaleSpire.$(AssemblyName)</PackageId>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/TaleSpire-Modding/PluginTemplate.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/TaleSpire-Modding/PluginTemplate.git</PackageProjectUrl>
+    <Description></Description>
+    <PackageTags>TaleSpire;Mods;</PackageTags>
+    <licenseUrl>https://github.com/TaleSpire-Modding/PluginTemplate/raw/main/LICENSE.txt</licenseUrl>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Authors>HolloFox</Authors>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="TaleSpire" Version="0.0.5"></PackageReference>
+    <PackageReference Include="Talespire.BepInEx" Version="5.4.11"></PackageReference>
+    <PackageReference Include="TaleSpire.SetInjectionFlagPlugin" Version="2.4.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+</Project>
