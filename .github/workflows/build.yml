@@ -1,6 +1,6 @@
 name: Checks Builds on PR
 
-on: [pull_request]
+on: [pull_request, push]
 
 jobs:
   Build:
@@ -17,7 +17,7 @@ jobs:
 
       - name: Dotnet Build
         run: |
-          $plugin = "PluginTemplate"
+          $plugin = "HelloTalespire"
           cd $plugin
           dotnet restore $plugin.csproj
           dotnet build $plugin.csproj --configuration Release

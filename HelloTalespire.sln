@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{62B770A8-02A6-4E1A-8F89-3B8CB93BA9A1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginTemplate", "PluginTemplate\PluginTemplate.csproj", "{ED62EF72-D808-4DE2-B211-75857A1645C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloTaleSpire", "PluginTemplate\HelloTaleSpire.csproj", "{ED62EF72-D808-4DE2-B211-75857A1645C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -33,5 +33,5 @@ using RPCPlugin;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion(PluginTemplate.PluginTemplate.Version)]
-[assembly: AssemblyFileVersion(PluginTemplate.PluginTemplate.Version)]
+[assembly: AssemblyVersion(HelloTaleSpire.PluginTemplate.Version)]
+[assembly: AssemblyFileVersion(HelloTaleSpire.PluginTemplate.Version)]
