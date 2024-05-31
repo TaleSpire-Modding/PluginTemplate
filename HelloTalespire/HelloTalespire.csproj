@@ -30,9 +30,16 @@
   <ItemGroup>
     <PackageReference Include="TaleSpire" Version="0.0.10"></PackageReference>
     <PackageReference Include="Talespire.BepInEx" Version="5.4.11"></PackageReference>
+    <PackageReference Include="TaleSpire.RadialUI" Version="2.4.0" />
     <PackageReference Include="TaleSpire.SetInjectionFlagPlugin" Version="2.4.3" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="AssetDataPlugin">
+      <HintPath>..\..\..\..\AppData\Roaming\r2modmanPlus-local\TaleSpire\profiles\MyPluginTesting\BepInEx\plugins\LordAshes-AssetDataPlugin\AssetDataPlugin.dll</HintPath>
+    </Reference>
+    <Reference Include="FileAccessPlugin">
+      <HintPath>..\..\..\..\AppData\Roaming\r2modmanPlus-local\TaleSpire\profiles\MyPluginTesting\BepInEx\plugins\LordAshes-FileAccessPlugin\FileAccessPlugin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
 </Project>
