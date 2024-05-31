@@ -29,7 +29,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="TaleSpire" Version="0.0.9"></PackageReference>
-    <PackageReference Include="Talespire.BepInEx" Version="5.4.11"></PackageReference>
+    <PackageReference Include="Talespire.BepInEx" Version="5.4.22"></PackageReference>
     <PackageReference Include="TaleSpire.SetInjectionFlagPlugin" Version="2.4.3" />
   </ItemGroup>
   <ItemGroup>
