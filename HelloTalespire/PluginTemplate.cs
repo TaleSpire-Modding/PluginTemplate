@@ -2,7 +2,6 @@
 using BepInEx.Configuration;
 using BepInEx.Logging;
 using HarmonyLib;
-using LordAshes;
 using ModdingTales;
 using Newtonsoft.Json;
 using PluginUtilities;
@@ -13,8 +12,8 @@ namespace HelloTaleSpire
 {
     [BepInPlugin(Guid, Name, Version)]
     [BepInDependency(SetInjectionFlag.Guid)]
-    [BepInDependency(LordAshes.AssetDataPlugin.Guid)]
-    [BepInDependency(LordAshes.FileAccessPlugin.Guid)]
+    // [BepInDependency(LordAshes.AssetDataPlugin.Guid)]
+    //[BepInDependency(LordAshes.FileAccessPlugin.Guid)]
     public sealed class PluginTemplate: BaseUnityPlugin
     {
         // Plugin info
@@ -51,15 +50,17 @@ namespace HelloTaleSpire
             if (LogLevel > ModdingUtils.LogLevel.None) _logger.LogInfo($"{Name} is Active.");
             ModdingUtils.Initialize(this, Logger, "HolloFoxes'");
 
-            AssetDataPlugin.Subscribe($"{Guid}.SetHeight", myNetCode);
+            // AssetDataPlugin.Subscribe($"{Guid}.SetHeight", myNetCode);
         }
 
+        /*
         private static void myNetCode(AssetDataPlugin.DatumChange changes)
         {
             string newHeight = (string) changes.value;
 
             HelloTalespire.Patches.GetHeightHidePlanePatch.myExposedHidePlane.SetHeight(float.Parse(newHeight));
         }
+        */
 
         public static void DoPatching()
         {
@@ -86,7 +87,7 @@ namespace HelloTaleSpire
             {
                 if (keyValuePair.Key.IsUp())
                 {
-                    AssetDataPlugin.SendInfo($"{Guid}.SetHeight",keyValuePair.Value.ToString());
+                    // AssetDataPlugin.SendInfo($"{Guid}.SetHeight",keyValuePair.Value.ToString());
                 }
             }
         }
